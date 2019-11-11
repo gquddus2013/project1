@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="822f21a2-78df-41ff-99c5-c47522b8311e" name="http://api.mathjs.org TestSuite" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="822f21a2-78df-41ff-99c5-c47522b8311efileName">http%3A%2F%2Fapi.mathjs.org-TestSuite</con:setting>
+  </con:settings>
+  <con:runType>SEQUENTIAL</con:runType>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testSuite>

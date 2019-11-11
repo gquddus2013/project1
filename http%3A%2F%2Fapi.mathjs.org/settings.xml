@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:RestService" id="cd9dc471-98dd-49c3-b405-af0bf8e3fc6f" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://api.mathjs.org" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="cd9dc471-98dd-49c3-b405-af0bf8e3fc6ffileName">http%3A%2F%2Fapi.mathjs.org</con:setting>
+  </con:settings>
+  <con:definitionCache type="TEXT" rootPart=""/>
+  <con:endpoints>
+    <con:endpoint>http://api.mathjs.org</con:endpoint>
+  </con:endpoints>
+</con:interface>

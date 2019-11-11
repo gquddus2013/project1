@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="96bc6162-2acf-434e-b2f5-89dc5c1d8cb7" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="http://api.mathjs.org TestCase 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="96bc6162-2acf-434e-b2f5-89dc5c1d8cb7fileName">http%3A%2F%2Fapi.mathjs.org-TestCase-1</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="restrequest" name="Request 1" id="c0befffb-a126-4b4d-82df-dca318bd81ab">
+    <con:settings/>
+    <con:config service="http://api.mathjs.org" resourcePath="/v4/" methodName="V4" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Request 1" id="a7c4d208-b108-44fe-bba7-7dac9c7616e7" mediaType="application/x-www-form-urlencoded" postQueryString="true">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://api.mathjs.org</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://api.mathjs.org/v4/</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="e6ba4b8a-b436-447a-a8a1-e1858474d625" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="47b29162-a20a-4e56-995f-17d4a6a1e77d" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:attachment>
+          <con:name>text file.txt</con:name>
+          <con:contentType>text/plain</con:contentType>
+          <con:size>60</con:size>
+          <con:contentId>text file.txt</con:contentId>
+          <con:data>UEsDBBQACAgIAC1TaE8AAAAAAAAAAAAAAAANAAAAdGV4dCBmaWxlLnR4dKvm5VJQUFBKrSgoUrJSiAbzgHxDbUMlMDtWB6KgoCg1ObM4Mz8PqMrQBChWy8sFAFBLBwhEfQUpMAAAADwAAABQSwECFAAUAAgICAAtU2hPRH0FKTAAAAA8AAAADQAAAAAAAAAAAAAAAAAAAAAAdGV4dCBmaWxlLnR4dFBLBQYAAAAAAQABADsAAABrAAAAAAA=</con:data>
+          <con:id>561398c5-6e6d-413f-be5b-708132e2e229</con:id>
+        </con:attachment>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <entry key="file" value="" xmlns="http://eviware.com/soapui/config"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>file</con:entry>
+        </con:parameterOrder>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="httprequest" name="HTTP Request" id="0c6d59df-4e6b-4ef9-8bb5-ee9b750dd321">
+    <con:settings/>
+    <con:config method="POST" xsi:type="con:HttpRequest" id="36266566-d111-4a02-9d75-3a6e9b56a84e" name="HTTP Request" postQueryString="false" mediaType="multipart/mixed" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>http://api.mathjs.org/v4/</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:attachment>
+        <con:name>textfile.txt</con:name>
+        <con:contentType>text/plain</con:contentType>
+        <con:size>60</con:size>
+        <con:contentId>file</con:contentId>
+        <con:part xsi:nil="true"/>
+        <con:data>UEsDBBQACAgIACpWaE8AAAAAAAAAAAAAAAAMAAAAdGV4dGZpbGUudHh0q+blUlBQUEqtKChSslKIBvOAfENtQyUwO1YHoqCgKDU5szgzPw+oytAEKFbLywUAUEsHCER9BSkwAAAAPAAAAFBLAQIUABQACAgIACpWaE9EfQUpMAAAADwAAAAMAAAAAAAAAAAAAAAAAAAAAAB0ZXh0ZmlsZS50eHRQSwUGAAAAAAEAAQA6AAAAagAAAAAA</con:data>
+        <con:id>ac96ea89-48c9-4f3e-b16d-0f953b2f932a</con:id>
+      </con:attachment>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:parameter>
+          <con:name>file</con:name>
+          <con:value>file:textfile.txt</con:value>
+          <con:style>QUERY</con:style>
+          <con:default>file:textfile.txt</con:default>
+        </con:parameter>
+      </con:parameters>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="httprequest" name="HTTP Request 2" id="af932851-02b8-4b4f-98ea-68d9faa376a0">
+    <con:settings/>
+    <con:config method="POST" xsi:type="con:HttpRequest" id="d0618ac4-ce33-4f22-83a3-2398e5d431cc" name="HTTP Request 2" postQueryString="false" mediaType="application/xml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint xsi:nil="true"/>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:attachment>
+        <con:name>textfile.txt</con:name>
+        <con:contentType>text/plain</con:contentType>
+        <con:size>60</con:size>
+        <con:contentId>textfile.txt</con:contentId>
+        <con:data>UEsDBBQACAgIAFdcaE8AAAAAAAAAAAAAAAAMAAAAdGV4dGZpbGUudHh0q+blUlBQUEqtKChSslKIBvOAfENtQyUwO1YHoqCgKDU5szgzPw+oytAEKFbLywUAUEsHCER9BSkwAAAAPAAAAFBLAQIUABQACAgIAFdcaE9EfQUpMAAAADwAAAAMAAAAAAAAAAAAAAAAAAAAAAB0ZXh0ZmlsZS50eHRQSwUGAAAAAAEAAQA6AAAAagAAAAAA</con:data>
+        <con:id>f4d136f8-7c48-491f-ad2d-450208f5b108</con:id>
+      </con:attachment>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>
